@@ -1,13 +1,13 @@
-# 发布版本说明
+# Release contents
 
-本仓库发布姜小伴本地应用及其界面。运行所需的四个 Python 模块、网页资源和启动入口来自作者本地项目。
+This repository publishes the Ginger Companion local application and its interface. The four core Python modules, web assets, and launcher come from the author's local project.
 
-个人设置、API 密钥、真实田间数据库、论文 PDF 与提取证据包保留在作者本机。新下载的版本从空数据开始，可以先体验应用内的示范田。论文库在用户本机接入资料后才有可检索内容。
+Personal settings, API keys, field databases, paper PDFs, and extracted evidence packages remain on the author's machine. A new installation starts with empty local data and can use the built-in demonstration field. Paper retrieval becomes available after compatible materials are connected locally.
 
-独立论文提取脚本 `ginger_qwen_hybrid.py` 与其配置不是本次发布的应用入口，未包含在仓库中。关于该工具的历史使用记录可作为开发背景，运行它需要另行提供脚本与对应环境。
+The separate extraction script `ginger_qwen_hybrid.py` and its configuration are not included. Historical local notes may refer to that workflow; running it requires the separate script and its environment.
 
-开发复核工作台保留了页面结构，离线快照为空；从应用的开发入口打开时读取本机资料。
+The developer evidence-review interface retains its page structure with an empty offline snapshot. When opened through the application, it reads local evidence.
 
-主应用使用 Python 标准库。部分论文原文图像来源校验会按需尝试导入 `pymupdf`；该能力依赖安装相应包及提供本地原论文。
+The core application uses the Python standard library. Some original-page-image provenance checks optionally use `pymupdf`, together with the original local PDF.
 
-尚未指定开源许可证。公开展示代码不代表授予任意使用或再分发许可。
+An open-source license has not yet been specified. Public code visibility does not itself grant unrestricted use or redistribution rights.
