@@ -1,0 +1,32 @@
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+config.json
+*secret*
+*credential*
+
+# Runtime data, literature, extraction results and backups
+ginger_companion_data/
+ginger_evidence_results/
+ginger_evidence_catalog.json
+papers/
+tmp/
+多模型测试保存/
+*.sqlite*
+*.db
+*.db-*
+*.log
+*.pdf
+*.docx
+*.zip
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

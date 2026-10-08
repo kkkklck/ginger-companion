@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>机构端证据复核工作台</title><link rel="stylesheet" href="ginger_ui/evidence-review.css"></head>
+<body><header><h1>证据复核工作台</h1><p>机构与研发使用 · 先读结论，再按需核对原文。</p><p id="totals" role="status"></p><p class="muted" id="mode"></p></header>
+<div class="toolbar"><select id="paper" aria-label="选择论文"><option value="all">全部论文</option></select><select id="state" aria-label="核查状态"><option value="all">全部状态</option><option value="quarantined">未放行</option><option value="auto_ready">已入训练库</option><option value="auto_reference">仅供参考</option></select><input id="search" type="search" aria-label="搜索结论" placeholder="搜索结论、编号或问题"></div>
+<main class="workspace"><aside class="list" id="list" aria-label="证据列表"></aside><article class="reader" id="reader"><p class="empty">正在读取最新证据…</p></article></main>
+<details id="diagnostics"><summary>资料接入诊断 仅维护人员需要</summary><div class="diagnostic" id="diagnostic-body"></div></details>
+<script id="snapshot" type="application/json">{"papers":[],"warnings":[]}</script><script src="ginger_ui/evidence-review.js" defer></script></body></html>
